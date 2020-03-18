@@ -17,11 +17,13 @@ dependencies {
     compile group: 'pt.up.fe.specs', name: 'lara-framework', version: '202003061350'
 
 }
-
+sourceSets {
+    main{resources {srcDir("src/main/weavergeneratorxml")}}
+}
 // See https://github.com/JetBrains/gradle-intellij-plugin/
 intellij {
     version '2019.3'
-    alternativeIdePath '/Applications/Android Studio.app'
+    /*alternativeIdePath '/Applications/Android Studio.app' */
 }
 patchPluginXml {
     changeNotes """

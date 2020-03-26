@@ -1,23 +1,44 @@
 import com.intellij.lang.FileASTNode;
+import com.intellij.lang.Language;
+import com.intellij.navigation.ItemPresentation;
+import com.intellij.openapi.editor.Document;
+import com.intellij.openapi.fileEditor.FileDocumentManager;
+import com.intellij.openapi.fileEditor.FileEditorManager;
 import com.intellij.openapi.fileTypes.FileType;
+import com.intellij.openapi.project.Project;
+import com.intellij.openapi.util.Key;
+import com.intellij.openapi.util.TextRange;
 import com.intellij.openapi.vfs.VirtualFile;
+import com.intellij.psi.*;
+import com.intellij.psi.scope.PsiScopeProcessor;
+import com.intellij.psi.search.GlobalSearchScope;
+import com.intellij.psi.search.PsiElementProcessor;
+import com.intellij.psi.search.SearchScope;
 import com.intellij.psi.tree.IFileElementType;
 import com.intellij.psi.util.PsiUtilCore;
+import com.intellij.util.IncorrectOperationException;
 import com.intellij.util.ObjectUtils;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
+import com.intellij.openapi.project.Project;
 
 import net.sf.cglib.asm.$ClassWriter;
 import org.lara.interpreter.weaver.generator.commandline.WeaverGenerator;
 import plugin_psi_weaver.PsiWeaver;
 import pt.up.fe.specs.lara.WeaverLauncher;
 
+import javax.swing.*;
+
 public class test {
-
-    public static void main(String[] args){
-
-        new WeaverLauncher(new PsiWeaver(/* PsiFile target that programmer is using */)).launch(args);
+    private test(@NotNull final Project proj) {
+        this.project = proj;
     }
+    public static void main(String[] args){
+        Document currentDoc = FileEditorManager.getInstance(project).getSelectedTextEditor().getDocument();
+        PsiFile pfile = PsiDocumentManager.getInstance(project).getPsiFile(currentDoc);
+        new WeaverLauncher(new PsiWeaver(pfile/* PsiFile target that programmer is using */).launch(args));
+    }
+    static private Project project;
 
 
 

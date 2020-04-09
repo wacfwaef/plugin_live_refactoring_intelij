@@ -5,7 +5,7 @@ Plugin for Intelij and Android Studio for scanning energy code smells and sugges
 
 Smell detection:
 - [x] FindViewById method 
-- [] DrawAllocation
+- [ ] DrawAllocation
 - [x] Bad WakeLock usage (no onPause method after)
-- [] HashMap usage
+- [ ] HashMap usage
 - [x] Private Getters and Setters

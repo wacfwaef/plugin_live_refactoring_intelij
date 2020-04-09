@@ -1,0 +1,13 @@
+aspectdef Hashmap
+
+	var i=0;
+	select class.field end
+	apply
+		i = $field.line; //linha onde esta a instancia wakelock
+	end
+	condition
+		$field.name == 'HashMap'
+	end
+	if ( i != 0) 
+	println('\t Warning! Your wakelock at line' + i + 'might not have a possible stop method, making this energy inefficient. Please use the method onPause');
+end

@@ -9,3 +9,5 @@ Smell detection:
 - [x] Bad WakeLock usage (no onPause method after)
 - [x] HashMap usage
 - [x] Private Getters and Setters
+- [ ] Lazy Class
+- [ ] Slow Loop

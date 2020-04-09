@@ -29,16 +29,21 @@ import pt.up.fe.specs.lara.WeaverLauncher;
 
 import javax.swing.*;
 
-public class test {
-    private test(@NotNull final Project proj) {
+public class pluginCore {
+
+    static private Project project;
+
+    private pluginCore(@NotNull final Project proj) {
         this.project = proj;
     }
     public static void main(String[] args){
+        //get psi file
         Document currentDoc = FileEditorManager.getInstance(project).getSelectedTextEditor().getDocument();
         PsiFile pfile = PsiDocumentManager.getInstance(project).getPsiFile(currentDoc);
+        //launch weaver
         new WeaverLauncher(new PsiWeaver(pfile/* PsiFile target that programmer is using */).launch(args));
     }
-    static private Project project;
+
 
 
 

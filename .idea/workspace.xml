@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a499ea23-d258-4075-9ab5-8309e1df0cf7" name="Default Changelist" comment="">
+    <list default="true" id="a499ea23-d258-4075-9ab5-8309e1df0cf7" name="Default Changelist" comment="added psifile;&#10;To solve: launch method;">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pluginCore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pluginCore.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,10 +40,11 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
-  <component name="RunManager" selected="Application.test">
-    <configuration name="test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="test" />
+  <component name="RunManager" selected="Application.pluginCore">
+    <configuration name="pluginCore" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="pluginCore" />
       <module name="weaver_android_studio.main" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -77,7 +78,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.test" />
+        <item itemvalue="Application.pluginCore" />
         <item itemvalue="Application.weavergen" />
       </list>
     </recent_temporary>
@@ -105,13 +106,29 @@
       <option name="presentableId" value="Default" />
       <updated>1583494683512</updated>
     </task>
+    <task id="LOCAL-00001" summary="added psifile;&#10;To solve: launch method;">
+      <created>1585266780139</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1585266780139</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="added psifile;&#10;To solve: launch method;" />
+    <option name="LAST_COMMIT_MESSAGE" value="added psifile;&#10;To solve: launch method;" />
   </component>
   <component name="WindowStateProjectService">
     <state x="488" y="93" key="#com.intellij.ide.util.MemberChooser" timestamp="1584464067659">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="488" y="93" key="#com.intellij.ide.util.MemberChooser/0.0.1366.768@0.0.1366.768" timestamp="1584464067659" />
+    <state x="267" y="0" key="CommitChangelistDialog2" timestamp="1585266821699">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="267" y="0" key="CommitChangelistDialog2/0.0.1366.768@0.0.1366.768" timestamp="1585266821699" />
     <state x="463" y="138" key="FileChooserDialogImpl" timestamp="1583495123033">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
@@ -132,13 +149,17 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state width="1323" height="192" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1584466453241" />
-    <state x="163" y="0" key="SettingsEditor" timestamp="1583495205529">
+    <state x="163" y="0" key="SettingsEditor" timestamp="1585321075509">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="163" y="0" key="SettingsEditor/0.0.1366.768@0.0.1366.768" timestamp="1583495205529" />
-    <state x="379" y="207" key="com.intellij.ide.util.TipDialog" timestamp="1585263580448">
+    <state x="163" y="0" key="SettingsEditor/0.0.1366.768@0.0.1366.768" timestamp="1585321075509" />
+    <state x="275" y="116" key="Vcs.Push.Dialog.v2" timestamp="1585266791795">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="379" y="207" key="com.intellij.ide.util.TipDialog/0.0.1366.768@0.0.1366.768" timestamp="1585263580448" />
+    <state x="275" y="116" key="Vcs.Push.Dialog.v2/0.0.1366.768@0.0.1366.768" timestamp="1585266791795" />
+    <state x="379" y="207" key="com.intellij.ide.util.TipDialog" timestamp="1585319203337">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="379" y="207" key="com.intellij.ide.util.TipDialog/0.0.1366.768@0.0.1366.768" timestamp="1585319203337" />
   </component>
 </project>

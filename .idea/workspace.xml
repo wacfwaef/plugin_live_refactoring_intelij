@@ -2,8 +2,39 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a499ea23-d258-4075-9ab5-8309e1df0cf7" name="Default Changelist" comment="added psifile;&#10;To solve: launch method;">
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/plugin_psi_weaver/PsiWeaver.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/plugin_psi_weaver/abstracts/APsiWeaverJoinPoint.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/plugin_psi_weaver/abstracts/joinpoints/AApp$AppAttributes.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/plugin_psi_weaver/abstracts/joinpoints/AApp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/plugin_psi_weaver/abstracts/joinpoints/AClass$ClassAttributes.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/plugin_psi_weaver/abstracts/joinpoints/AClass.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/plugin_psi_weaver/abstracts/joinpoints/AConstructor$ConstructorAttributes.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/plugin_psi_weaver/abstracts/joinpoints/AConstructor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/plugin_psi_weaver/abstracts/joinpoints/AFile$FileAttributes.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/plugin_psi_weaver/abstracts/joinpoints/AFile.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/plugin_psi_weaver/abstracts/joinpoints/AInterface$InterfaceAttributes.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/plugin_psi_weaver/abstracts/joinpoints/AInterface.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/plugin_psi_weaver/abstracts/joinpoints/AJoinPoint.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/plugin_psi_weaver/abstracts/joinpoints/AMethod$MethodAttributes.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/plugin_psi_weaver/abstracts/joinpoints/AMethod.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/plugin_psi_weaver/abstracts/joinpoints/AObjectType$ObjectTypeAttributes.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/plugin_psi_weaver/abstracts/joinpoints/AObjectType.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/plugin_psi_weaver/abstracts/joinpoints/AScope$ScopeAttributes.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/plugin_psi_weaver/abstracts/joinpoints/AScope.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/plugin_psi_weaver/abstracts/joinpoints/AStatement$StatementAttributes.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/plugin_psi_weaver/abstracts/joinpoints/AStatement.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/plugin_psi_weaver/abstracts/weaver/APsiWeaver.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/plugin_psi_weaver/exceptions/PsiWeaverException.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pluginCore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pluginCore.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/weavergen.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/plugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/plugin.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,11 +46,23 @@
       <ProjectState />
     </projectState>
   </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand />
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -43,15 +86,15 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RunManager" selected="Application.pluginCore">
-    <configuration name="pluginCore" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="pluginCore" />
+    <configuration name="launchPlugin" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="launchPlugin" />
       <module name="weaver_android_studio.main" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="weavergen" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="weavergen" />
+    <configuration name="pluginCore" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="pluginCore" />
       <module name="weaver_android_studio.main" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -79,7 +122,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.pluginCore" />
-        <item itemvalue="Application.weavergen" />
+        <item itemvalue="Application.launchPlugin" />
       </list>
     </recent_temporary>
   </component>
@@ -121,18 +164,26 @@
     <option name="LAST_COMMIT_MESSAGE" value="added psifile;&#10;To solve: launch method;" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="488" y="93" key="#com.intellij.ide.util.MemberChooser" timestamp="1584464067659">
+    <state x="275" y="42" key="#Inspections" timestamp="1587067661194">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="488" y="93" key="#com.intellij.ide.util.MemberChooser/0.0.1366.768@0.0.1366.768" timestamp="1584464067659" />
+    <state x="275" y="42" key="#Inspections/0.0.1366.768@0.0.1366.768" timestamp="1587067661194" />
+    <state x="488" y="93" key="#com.intellij.ide.util.MemberChooser" timestamp="1587071121960">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="488" y="93" key="#com.intellij.ide.util.MemberChooser/0.0.1366.768@0.0.1366.768" timestamp="1587071121960" />
+    <state x="293" y="309" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1587071481310">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="293" y="309" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1366.768@0.0.1366.768" timestamp="1587071481310" />
     <state x="267" y="0" key="CommitChangelistDialog2" timestamp="1585266821699">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="267" y="0" key="CommitChangelistDialog2/0.0.1366.768@0.0.1366.768" timestamp="1585266821699" />
-    <state x="463" y="138" key="FileChooserDialogImpl" timestamp="1583495123033">
+    <state x="463" y="138" key="FileChooserDialogImpl" timestamp="1587573289566">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="463" y="138" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1583495123033" />
+    <state x="463" y="138" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1587573289566" />
     <state width="1323" height="192" key="GridCell.Tab.0.bottom" timestamp="1584466453241">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
@@ -157,9 +208,13 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="275" y="116" key="Vcs.Push.Dialog.v2/0.0.1366.768@0.0.1366.768" timestamp="1585266791795" />
-    <state x="379" y="207" key="com.intellij.ide.util.TipDialog" timestamp="1585319203337">
+    <state x="379" y="207" key="com.intellij.ide.util.TipDialog" timestamp="1587572871401">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="379" y="207" key="com.intellij.ide.util.TipDialog/0.0.1366.768@0.0.1366.768" timestamp="1585319203337" />
+    <state x="379" y="207" key="com.intellij.ide.util.TipDialog/0.0.1366.768@0.0.1366.768" timestamp="1587572871401" />
+    <state x="29" y="0" key="new project wizard" timestamp="1587573304616">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="29" y="0" key="new project wizard/0.0.1366.768@0.0.1366.768" timestamp="1587573304616" />
   </component>
 </project>

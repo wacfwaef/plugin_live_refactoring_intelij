@@ -1,23 +1,25 @@
 <idea-plugin>
     <id>org.example.weaver_android_studio</id>
-    <name>weaver_as</name>
+    <name>plugin_live_refactoring_intelij</name>
     <vendor >Company</vendor>
 
-    <description><![CDATA[
-    Enter short description for your plugin here.<br>
-    <em>most HTML tags may be used</em>
-    ]]></description>
 
-    <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
-         on how to target different products -->
     <depends>com.intellij.modules.platform</depends>
+    <depends>org.jetbrains.android</depends>
 
     <extensions defaultExtensionNs="com.intellij">
         <!-- Add your extensions here -->
     </extensions>
 
     <actions>
-
+        <action id="launchPlugin"
+                class="actions.launchPlugin"
+                text="Start the Plugin Weaver"
+                description="Start the Plugin Weaver">
+            <keyboard-shortcut keymap="Mac OS X" first-keystroke="meta QUOTE"/>
+            <keyboard-shortcut keymap="Mac OS X 10.5+" first-keystroke="meta QUOTE"/>
+            <keyboard-shortcut keymap="$default" first-keystroke="ctrl QUOTE"/>
+        </action>
         <!-- Add your actions here -->
     </actions>
 </idea-plugin>

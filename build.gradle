@@ -22,7 +22,7 @@ sourceSets {
 }
 // See https://github.com/JetBrains/gradle-intellij-plugin/
 intellij {
-    version '2019.3'
+    version '2019.3' /* change for Android Studio based version */
     /*alternativeIdePath '/Applications/Android Studio.app' */
 }
 patchPluginXml {

@@ -7,5 +7,7 @@ Smell detection:
 - [x] FindViewById method 
 - [ ] DrawAllocation
 - [x] Bad WakeLock usage (no onPause method after)
-- [ ] HashMap usage
+- [x] HashMap usage
 - [x] Private Getters and Setters
+- [ ] Lazy Class
+- [ ] Slow Loop

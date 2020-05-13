@@ -6,7 +6,7 @@ aspectdef Wakelock
 		i = $field.line; //linha onde esta a instancia wakelock
 	end
 	condition
-		$field.name == 'Wakelock'
+		$field.type == 'Wakelock'
 	end
 	 
 	var call_graph = new LaraObject();
@@ -21,9 +21,9 @@ aspectdef Wakelock
 	for (var m in call_graph) {
 		//Foreach call 'c'
 		for (var c in call_graph[m]) {
-		    //verify if the called method is findViewById method, the not efficient method
+		   
 		    if(c == 'onPause')
-		    count++; //nº metodos onpause
+		    count++; //methods onpause
 		}
 	}
 	if (count == 0 && i != 0) 

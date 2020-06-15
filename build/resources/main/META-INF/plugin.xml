@@ -4,17 +4,18 @@
       Add change notes here.&lt;br&gt;
       &lt;em&gt;most HTML tags may be used&lt;/em&gt;</change-notes>
   <idea-version since-build="193.5233" until-build="193.*"/>
-  <id>org.example.weaver_android_studio</id>
-  <name>plugin_live_refactoring_intelij</name>
-  <vendor>Company</vendor>
+  <id>org.example.showresult</id>
+  <name>showresultplugin</name>
+  <vendor email="support@yourcompany.com" url="http://www.yourcompany.com">YourCompany</vendor>
+  <description>
+    Plugin for Android Studio&lt;br&gt;
+    &lt;em&gt;most HTML tags may be used&lt;/em&gt;
+    </description>
   <depends>com.intellij.modules.platform</depends>
-  <depends>org.jetbrains.android</depends>
   <extensions defaultExtensionNs="com.intellij"/>
   <actions>
-    <action id="launchPlugin" class="actions.launchPlugin" text="Start the Plugin Weaver" description="Start the Plugin Weaver">
-      <keyboard-shortcut keymap="Mac OS X" first-keystroke="meta QUOTE"/>
-      <keyboard-shortcut keymap="Mac OS X 10.5+" first-keystroke="meta QUOTE"/>
-      <keyboard-shortcut keymap="$default" first-keystroke="ctrl QUOTE"/>
+    <action id="ShowResult" class="launchPlugin" text="ShowResult" description="Show the result">
+      <add-to-group group-id="ViewMenu" anchor="first"/>
     </action>
   </actions>
 </idea-plugin>

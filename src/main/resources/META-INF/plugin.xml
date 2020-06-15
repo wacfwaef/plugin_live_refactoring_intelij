@@ -1,25 +1,25 @@
 <idea-plugin>
-    <id>org.example.weaver_android_studio</id>
-    <name>plugin_live_refactoring_intelij</name>
-    <vendor >Company</vendor>
+    <id>org.example.showresult</id>
+    <name>showresultplugin</name>
+    <vendor email="support@yourcompany.com" url="http://www.yourcompany.com">YourCompany</vendor>
 
+    <description><![CDATA[
+    Plugin for Android Studio<br>
+    <em>most HTML tags may be used</em>
+    ]]></description>
 
+    <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+         on how to target different products -->
     <depends>com.intellij.modules.platform</depends>
-    <depends>org.jetbrains.android</depends>
 
     <extensions defaultExtensionNs="com.intellij">
         <!-- Add your extensions here -->
     </extensions>
 
     <actions>
-        <action id="launchPlugin"
-                class="actions.launchPlugin"
-                text="Start the Plugin Weaver"
-                description="Start the Plugin Weaver">
-            <keyboard-shortcut keymap="Mac OS X" first-keystroke="meta QUOTE"/>
-            <keyboard-shortcut keymap="Mac OS X 10.5+" first-keystroke="meta QUOTE"/>
-            <keyboard-shortcut keymap="$default" first-keystroke="ctrl QUOTE"/>
-        </action>
         <!-- Add your actions here -->
+        <action id="ShowResult" class="launchPlugin" text="ShowResult" description="Show the result">
+            <add-to-group group-id="ViewMenu" anchor="first"/>
+        </action>
     </actions>
 </idea-plugin>

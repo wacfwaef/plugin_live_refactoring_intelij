@@ -5,13 +5,16 @@
       &lt;em&gt;most HTML tags may be used&lt;/em&gt;</change-notes>
   <idea-version since-build="193.5233" until-build="193.*"/>
   <id>org.example.weaver_android_studio</id>
-  <name>weaver_as</name>
+  <name>plugin_live_refactoring_intelij</name>
   <vendor>Company</vendor>
-  <description>
-    Enter short description for your plugin here.&lt;br&gt;
-    &lt;em&gt;most HTML tags may be used&lt;/em&gt;
-    </description>
   <depends>com.intellij.modules.platform</depends>
+  <depends>org.jetbrains.android</depends>
   <extensions defaultExtensionNs="com.intellij"/>
-  <actions/>
+  <actions>
+    <action id="launchPlugin" class="actions.launchPlugin" text="Start the Plugin Weaver" description="Start the Plugin Weaver">
+      <keyboard-shortcut keymap="Mac OS X" first-keystroke="meta QUOTE"/>
+      <keyboard-shortcut keymap="Mac OS X 10.5+" first-keystroke="meta QUOTE"/>
+      <keyboard-shortcut keymap="$default" first-keystroke="ctrl QUOTE"/>
+    </action>
+  </actions>
 </idea-plugin>

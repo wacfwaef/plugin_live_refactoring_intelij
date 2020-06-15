@@ -1,25 +1,63 @@
 package actions;
 
+import com.intellij.lang.annotation.AnnotationHolder;
 import com.intellij.openapi.actionSystem.AnAction;
 import com.intellij.openapi.actionSystem.AnActionEvent;
-import com.intellij.openapi.project.DumbAwareAction;
+import com.intellij.openapi.actionSystem.LangDataKeys;
+import com.intellij.openapi.editor.Document;
+import com.intellij.openapi.project.Project;
+import com.intellij.openapi.ui.Messages;
+import com.intellij.psi.PsiDocumentManager;
+import com.intellij.psi.PsiElement;
+import com.intellij.psi.PsiFile;
+import highlight.*;
 import org.jetbrains.annotations.NotNull;
-import org.lara.interpreter.weaver.generator.commandline.WeaverGenerator;
-
-import java.io.File;
 
 
 public class launchPlugin extends AnAction {
 
-
-
     @Override
     public void actionPerformed(@NotNull AnActionEvent e) {
-    //invoke weaver
-        System.out.println("new file" +(new File(".")).getAbsolutePath());
-        String[] weaverArgs = {"-w", "PsiWeaver","-p","plugin_psi_weaver","-o","src/main/java","-x","src/main/weavergeneratorxml","-n","com.intellij.psi.PsiElement","-e","-d","-j"};
-        WeaverGenerator.main(weaverArgs);
-     //read data & highlight
 
+
+        PsiFile rootFile = e.getData(LangDataKeys.PSI_FILE);
+        Project currentProject = e.getProject();
+        PsiDocumentManager psiDocumentManager = PsiDocumentManager.getInstance(currentProject);
+        Document document = psiDocumentManager.getDocument(rootFile);
+        if (rootFile == null) {
+            Messages.showMessageDialog(currentProject, "No file selected!",
+                    "PsiWeaver Execution", Messages.getErrorIcon());
+            return;
+        }
+        //create anotators & holder
+        Anotatora aa = new Anotatora();
+        Anotatorb ab = new Anotatorb();
+        Anotatorc ac = new Anotatorc();
+        Anotatord ad = new Anotatord();
+        AnnotationHolder holder = null;
+
+
+        PsiElement[] pe = rootFile.getChildren();
+        int a = 0;
+        for (int i = 0; i == pe.length; i++) {
+            int textOffset = pe[i].getTextOffset();
+            int lineNumber = document.getLineNumber(textOffset);
+            switch (a) {
+                case 0:
+                    GroupNoti.createNotificationa(lineNumber, currentProject);
+                    aa.annotate(pe[i], holder);
+                case 1:
+                    GroupNoti.createNotificationb(lineNumber, currentProject);
+                    ab.annotate(pe[i], holder);
+                case 2:
+                    GroupNoti.createNotificationc(lineNumber, currentProject);
+                    ac.annotate(pe[i], holder);
+                case 3:
+                    GroupNoti.createNotificationd(lineNumber, currentProject);
+                    ad.annotate(pe[i], holder);
+                default:
+                    GroupNoti.createNotificationNo(currentProject); //this one finished auto-disappears
+            }
+        }
     }
 }

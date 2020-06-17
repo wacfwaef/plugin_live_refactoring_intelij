@@ -18,7 +18,7 @@
 
     <actions>
         <!-- Add your actions here -->
-        <action id="ShowResult" class="launchPlugin" text="ShowResult" description="Show the result">
+        <action id="ShowResult" class="actions.launchPlugin" text="ShowResult" description="Show the result">
             <add-to-group group-id="ViewMenu" anchor="first"/>
         </action>
     </actions>

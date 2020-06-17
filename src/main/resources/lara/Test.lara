@@ -1,4 +1,5 @@
 import lara.JavaInterop;
+import weaver.Weaver;
 
 aspectdef Test
 

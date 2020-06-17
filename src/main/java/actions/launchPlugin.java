@@ -12,6 +12,9 @@ import com.intellij.psi.PsiElement;
 import com.intellij.psi.PsiFile;
 import highlight.*;
 import org.jetbrains.annotations.NotNull;
+import org.suikasoft.jOptions.Interfaces.DataStore;
+import pt.up.fe.specs.intellij.psiweaver.PsiWeaver;
+import pt.up.fe.specs.util.providers.ResourceProvider;
 
 
 public class launchPlugin extends AnAction {
@@ -21,6 +24,9 @@ public class launchPlugin extends AnAction {
 
 
         PsiFile rootFile = e.getData(LangDataKeys.PSI_FILE);
+
+
+
         Project currentProject = e.getProject();
         PsiDocumentManager psiDocumentManager = PsiDocumentManager.getInstance(currentProject);
         Document document = psiDocumentManager.getDocument(rootFile);
@@ -29,6 +35,13 @@ public class launchPlugin extends AnAction {
                     "PsiWeaver Execution", Messages.getErrorIcon());
             return;
         }
+
+        ResourceProvider laraFile = () -> "lara/Test.lara";
+        DataStore results = PsiWeaver.run(rootFile, laraFile.read());
+
+        Messages.showMessageDialog(currentProject, "Lara results:\n" + results,
+                "LARA Execution", Messages.getInformationIcon());
+
         //create anotators & holder
         Anotatora aa = new Anotatora();
         Anotatorb ab = new Anotatorb();

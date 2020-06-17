@@ -1,0 +1,21 @@
+import lara.JavaInterop;
+
+aspectdef Test
+
+    Weaver.getWeaverEngine().getUserData().setRaw("TEST", "testing");
+
+    var calls = [];
+    var callNames = [];
+
+
+	//Select calls inside methods
+	select class.method.call end
+	apply
+	    calls.push($call.psiElement);
+	    callNames.push($class.name + "->" + $method.name + "->" + $call.name);
+	end
+
+	Weaver.getWeaverEngine().getUserData().setRaw("calls", JavaInterop.arrayToList(calls));
+	Weaver.getWeaverEngine().getUserData().setRaw("callNames", JavaInterop.arrayToList(callNames));
+
+end
